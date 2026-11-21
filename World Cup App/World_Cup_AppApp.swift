@@ -1,17 +1,14 @@
-//
-//  World_Cup_AppApp.swift
-//  World Cup App
-//
-//  Created by Dominic Legaspi on 11/17/22.
-//
-
+import SwiftData
 import SwiftUI
 
 @main
 struct World_Cup_AppApp: App {
+    @State private var viewModel = TournamentViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel)
         }
+        .modelContainer(for: FavoriteTeam.self)
     }
 }
