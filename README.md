@@ -46,7 +46,7 @@ Design decisions worth knowing about:
 
 ## Testing
 
-About 45 unit tests (XCTest) cover decoding edge cases, standings and tiebreakers, schedule grouping, penalty and extra-time results, own goals, the service and cache fallback, view-model load states, and SwiftData favorites using an in-memory store.
+45 unit tests (XCTest) cover decoding edge cases, standings and tiebreakers, schedule grouping, penalty and extra-time results, own goals, the service and cache fallback, view-model load states, and SwiftData favorites using an in-memory store.
 
 Run them in Xcode with **Cmd+U**.
 

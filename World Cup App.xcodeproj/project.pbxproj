@@ -11,9 +11,6 @@
 		C32F273D29270B1100A096F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F273C29270B1100A096F0 /* ContentView.swift */; };
 		C32F273F29270B1500A096F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32F273E29270B1500A096F0 /* Assets.xcassets */; };
 		C32F274329270B1500A096F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32F274229270B1500A096F0 /* Preview Assets.xcassets */; };
-		C32F274D29270B1500A096F0 /* World_Cup_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F274C29270B1500A096F0 /* World_Cup_AppTests.swift */; };
-		C32F275729270B1500A096F0 /* World_Cup_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F275629270B1500A096F0 /* World_Cup_AppUITests.swift */; };
-		C32F275929270B1500A096F0 /* World_Cup_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F275829270B1500A096F0 /* World_Cup_AppUITestsLaunchTests.swift */; };
 		C32F27682927127C00A096F0 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F27672927127C00A096F0 /* TeamView.swift */; };
 		C36DE1CD30B23FB0004441B0 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DE1CB30B23FB0004441B0 /* Match.swift */; };
 		C36DE1CE30B23FB0004441B0 /* KickoffParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DE1CA30B23FB0004441B0 /* KickoffParser.swift */; };
@@ -53,13 +50,6 @@
 			remoteGlobalIDString = C32F273629270B1100A096F0;
 			remoteInfo = "World Cup App";
 		};
-		C32F275329270B1500A096F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C32F272F29270B1100A096F0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C32F273629270B1100A096F0;
-			remoteInfo = "World Cup App";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -70,10 +60,6 @@
 		C32F274029270B1500A096F0 /* World_Cup_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = World_Cup_App.entitlements; sourceTree = "<group>"; };
 		C32F274229270B1500A096F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C32F274829270B1500A096F0 /* World Cup AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "World Cup AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32F274C29270B1500A096F0 /* World_Cup_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_Cup_AppTests.swift; sourceTree = "<group>"; };
-		C32F275229270B1500A096F0 /* World Cup AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "World Cup AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32F275629270B1500A096F0 /* World_Cup_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_Cup_AppUITests.swift; sourceTree = "<group>"; };
-		C32F275829270B1500A096F0 /* World_Cup_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_Cup_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C32F27672927127C00A096F0 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		C36DE1CA30B23FB0004441B0 /* KickoffParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickoffParser.swift; sourceTree = "<group>"; };
 		C36DE1CB30B23FB0004441B0 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
@@ -120,13 +106,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C32F274F29270B1500A096F0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,7 +124,6 @@
 			children = (
 				C32F273729270B1100A096F0 /* World Cup App.app */,
 				C32F274829270B1500A096F0 /* World Cup AppTests.xctest */,
-				C32F275229270B1500A096F0 /* World Cup AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +162,6 @@
 				C36DE1DE30B2433B004441B0 /* TournamentViewModelTests.swift */,
 				C36DE1D630B242A8004441B0 /* MatchesServiceTests.swift */,
 				C36DE1CF30B24045004441B0 /* MatchDecodingTests.swift */,
-				C32F274C29270B1500A096F0 /* World_Cup_AppTests.swift */,
 			);
 			path = "World Cup AppTests";
 			sourceTree = "<group>";
@@ -192,8 +169,6 @@
 		C32F275529270B1500A096F0 /* World Cup AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C32F275629270B1500A096F0 /* World_Cup_AppUITests.swift */,
-				C32F275829270B1500A096F0 /* World_Cup_AppUITestsLaunchTests.swift */,
 			);
 			path = "World Cup AppUITests";
 			sourceTree = "<group>";
@@ -286,24 +261,6 @@
 			productReference = C32F274829270B1500A096F0 /* World Cup AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C32F275129270B1500A096F0 /* World Cup AppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C32F276229270B1500A096F0 /* Build configuration list for PBXNativeTarget "World Cup AppUITests" */;
-			buildPhases = (
-				C32F274E29270B1500A096F0 /* Sources */,
-				C32F274F29270B1500A096F0 /* Frameworks */,
-				C32F275029270B1500A096F0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C32F275429270B1500A096F0 /* PBXTargetDependency */,
-			);
-			name = "World Cup AppUITests";
-			productName = "World Cup AppUITests";
-			productReference = C32F275229270B1500A096F0 /* World Cup AppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -318,10 +275,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					C32F274729270B1500A096F0 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = C32F273629270B1100A096F0;
-					};
-					C32F275129270B1500A096F0 = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = C32F273629270B1100A096F0;
 					};
@@ -342,7 +295,6 @@
 			targets = (
 				C32F273629270B1100A096F0 /* World Cup App */,
 				C32F274729270B1500A096F0 /* World Cup AppTests */,
-				C32F275129270B1500A096F0 /* World Cup AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -358,13 +310,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C32F274629270B1500A096F0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C32F275029270B1500A096F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,16 +361,6 @@
 				C36DE1E030B2433B004441B0 /* TournamentViewModelTests.swift in Sources */,
 				C3B9A92D30B2466E00D235F2 /* TeamSummaryTests.swift in Sources */,
 				C36DE1F530B2458B004441B0 /* DisplayTests.swift in Sources */,
-				C32F274D29270B1500A096F0 /* World_Cup_AppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C32F274E29270B1500A096F0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C32F275929270B1500A096F0 /* World_Cup_AppUITestsLaunchTests.swift in Sources */,
-				C32F275729270B1500A096F0 /* World_Cup_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,11 +371,6 @@
 			isa = PBXTargetDependency;
 			target = C32F273629270B1100A096F0 /* World Cup App */;
 			targetProxy = C32F274929270B1500A096F0 /* PBXContainerItemProxy */;
-		};
-		C32F275429270B1500A096F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C32F273629270B1100A096F0 /* World Cup App */;
-			targetProxy = C32F275329270B1500A096F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -629,7 +559,6 @@
 		C32F276029270B1500A096F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -651,7 +580,6 @@
 		C32F276129270B1500A096F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -667,48 +595,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/World Cup App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/World Cup App";
-			};
-			name = Release;
-		};
-		C32F276329270B1500A096F0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.asu.World-Cup-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "World Cup App";
-			};
-			name = Debug;
-		};
-		C32F276429270B1500A096F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.asu.World-Cup-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "World Cup App";
 			};
 			name = Release;
 		};
@@ -738,15 +624,6 @@
 			buildConfigurations = (
 				C32F276029270B1500A096F0 /* Debug */,
 				C32F276129270B1500A096F0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C32F276229270B1500A096F0 /* Build configuration list for PBXNativeTarget "World Cup AppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C32F276329270B1500A096F0 /* Debug */,
-				C32F276429270B1500A096F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

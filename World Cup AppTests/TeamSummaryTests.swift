@@ -106,16 +106,23 @@ final class TeamSummaryTests: XCTestCase {
 @MainActor
 final class FavoritesStoreTests: XCTestCase {
 
-    private func makeStore() throws -> FavoritesStore {
-        let container = try ModelContainer(
+    /// The container must outlive the store: a context whose container has been
+    /// deallocated crashes on first use. XCTest makes a fresh instance for each
+    /// test, so every test gets its own empty in-memory store.
+    private lazy var container: ModelContainer = {
+        // swiftlint:disable:next force_try
+        try! ModelContainer(
             for: FavoriteTeam.self,
             configurations: ModelConfiguration(isStoredInMemoryOnly: true)
         )
-        return FavoritesStore(context: container.mainContext)
+    }()
+
+    private func makeStore() -> FavoritesStore {
+        FavoritesStore(context: container.mainContext)
     }
 
     func testToggleAddsThenRemoves() throws {
-        let store = try makeStore()
+        let store = makeStore()
 
         XCTAssertFalse(store.isFavorite("Spain"))
         store.toggle("Spain")
@@ -125,7 +132,7 @@ final class FavoritesStoreTests: XCTestCase {
     }
 
     func testFavoritesAreIndependentPerTeam() throws {
-        let store = try makeStore()
+        let store = makeStore()
 
         store.toggle("Spain")
 
