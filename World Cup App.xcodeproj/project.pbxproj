@@ -16,6 +16,9 @@
 		C32F275929270B1500A096F0 /* World_Cup_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F275829270B1500A096F0 /* World_Cup_AppUITestsLaunchTests.swift */; };
 		C32F276629270E6700A096F0 /* TeamNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F276529270E6700A096F0 /* TeamNames.swift */; };
 		C32F27682927127C00A096F0 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F27672927127C00A096F0 /* TeamView.swift */; };
+		C36DE1CD30B23FB0004441B0 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DE1CB30B23FB0004441B0 /* Match.swift */; };
+		C36DE1CE30B23FB0004441B0 /* KickoffParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DE1CA30B23FB0004441B0 /* KickoffParser.swift */; };
+		C36DE1D030B24045004441B0 /* MatchDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DE1CF30B24045004441B0 /* MatchDecodingTests.swift */; };
 		C394CB462FE8677600A50933 /* YouTubeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394CB452FE8677600A50933 /* YouTubeWebView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		C32F275829270B1500A096F0 /* World_Cup_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_Cup_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C32F276529270E6700A096F0 /* TeamNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamNames.swift; sourceTree = "<group>"; };
 		C32F27672927127C00A096F0 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		C36DE1CA30B23FB0004441B0 /* KickoffParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickoffParser.swift; sourceTree = "<group>"; };
+		C36DE1CB30B23FB0004441B0 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		C36DE1CF30B24045004441B0 /* MatchDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDecodingTests.swift; sourceTree = "<group>"; };
 		C394CB452FE8677600A50933 /* YouTubeWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +108,7 @@
 		C32F273929270B1100A096F0 /* World Cup App */ = {
 			isa = PBXGroup;
 			children = (
+				C36DE1CC30B23FB0004441B0 /* Models */,
 				C32F273A29270B1100A096F0 /* World_Cup_AppApp.swift */,
 				C32F273C29270B1100A096F0 /* ContentView.swift */,
 				C32F276529270E6700A096F0 /* TeamNames.swift */,
@@ -124,6 +131,7 @@
 		C32F274B29270B1500A096F0 /* World Cup AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				C36DE1CF30B24045004441B0 /* MatchDecodingTests.swift */,
 				C32F274C29270B1500A096F0 /* World_Cup_AppTests.swift */,
 			);
 			path = "World Cup AppTests";
@@ -136,6 +144,15 @@
 				C32F275829270B1500A096F0 /* World_Cup_AppUITestsLaunchTests.swift */,
 			);
 			path = "World Cup AppUITests";
+			sourceTree = "<group>";
+		};
+		C36DE1CC30B23FB0004441B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C36DE1CA30B23FB0004441B0 /* KickoffParser.swift */,
+				C36DE1CB30B23FB0004441B0 /* Match.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +290,8 @@
 				C32F276629270E6700A096F0 /* TeamNames.swift in Sources */,
 				C32F273B29270B1100A096F0 /* World_Cup_AppApp.swift in Sources */,
 				C32F27682927127C00A096F0 /* TeamView.swift in Sources */,
+				C36DE1CD30B23FB0004441B0 /* Match.swift in Sources */,
+				C36DE1CE30B23FB0004441B0 /* KickoffParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36DE1D030B24045004441B0 /* MatchDecodingTests.swift in Sources */,
 				C32F274D29270B1500A096F0 /* World_Cup_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
